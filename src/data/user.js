@@ -39,7 +39,8 @@ const INFO = {
 				"Construí una IDE online de Python usando React y Vite para lograr una SPA rápida y eficiente. Implementé CodeMirror 6 como editor, con soporte para resaltado de Python, y usé Pyodide para ejecutar código directamente en el navegador sin necesidad de un servidor backend. Para gestionar el estado, y agregué soporte multilenguaje con i18next. También incorporé flexlayout-react para organizar los paneles de la interfaz y SweetAlert2 para manejar alertas y notificaciones. Además, integré Blockly mediante react-blockly para permitir programación visual junto con el editor de código.",
 			logo: ["https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png", "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/react.svg", "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/css/css.png", "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/html/html.png", "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png"],
 			linkText: "Visitar Proyecto",
-			link: "https://github.com/marianom23/react-python-runner",
+			githubLink: "https://github.com/marianom23/react-python-runner",
+			iframeLink: "https://react-python-runner.vercel.app/sandbox"
 		},
 
 		{
@@ -49,6 +50,8 @@ const INFO = {
 			logo: ["https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png", "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/css/css.png", "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/html/html.png"],
 			linkText: "Visitar Proyecto",
 			link: "https://github.com/marianom23/js-app-excel-bloques",
+			githubLink: "https://github.com/marianom23/js-app-excel-bloques",
+			iframeLink: "https://js-app-excel-bloques.vercel.app/"
 		},
 
 		{
@@ -58,6 +61,8 @@ const INFO = {
 			logo: ["https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png", "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/css/css.png", "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/html/html.png"],
 			linkText: "Visitar Proyecto",
 			link: "https://github.com",
+			githubLink: "https://github.com/marianom23/simulador-tablas-dinamicas",
+			iframeLink: "https://js-app-excel-bloques-b8j5.vercel.app/"
 		},
 
 		{
@@ -67,6 +72,8 @@ const INFO = {
 				logo: ["https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png", "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/react.svg", "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/css/css.png", "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/html/html.png", "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png", "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/tensorflow.svg"],
 			linkText: "Visitar Proyecto",
 			link: "https://github.com/marianom23/actividades-ia",
+			githubLink: "https://github.com/marianom23/actividades-ia",
+			iframeLink: "https://actividades-ia.vercel.app/"
 		},
 
 		{
@@ -75,7 +82,7 @@ const INFO = {
 				"Este proyecto consiste en la adaptación de los primeros niveles del juego de mesa The Crew a un entorno digital, desarrollado en Python con la biblioteca Pygame. La versión digital busca recrear la experiencia cooperativa del juego original, implementando mecánicas de comunicación limitada entre jugadores y desafíos progresivos basados en misiones.",
 			logo: ["https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png"],
 			linkText: "Visitar Proyecto",
-			link: "https://github.com/marianom23/LaTripulacion",
+			githubLink: "https://github.com/marianom23/LaTripulacion",
 		},
 	],
 };
