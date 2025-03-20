@@ -1,7 +1,7 @@
 const INFO = {
 	main: {
-		title: "Reactfolio by truethari",
-		name: "Tharindu N.",
+		title: "Portafolio - Mariano Martin",
+		name: "Mariano Martin",
 		email: "marianomartin496@gmail.com",
 		logo: "../logo.png",
 	},
@@ -75,7 +75,6 @@ const INFO = {
 			githubLink: "https://github.com/marianom23/actividades-ia",
 			iframeLink: "https://actividades-ia.vercel.app/"
 		},
-
 		{
 			title: "The Crew Port",
 			description:
@@ -83,6 +82,14 @@ const INFO = {
 			logo: ["https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png"],
 			linkText: "Visitar Proyecto",
 			githubLink: "https://github.com/marianom23/LaTripulacion",
+		},
+		{
+			title: "El buen sabor",
+			description:
+				"Se trata de una página web que gestiona un restaurante con opciones de servicio take away y delivery. La plataforma ofrece métricas de negocios, estadísticas y facturación. Todo ello está respaldado por un sistema de caja, cocina y delivery. El front-end está desarrollado en ReactJS, mientras que el backend se implementa en Go. Este proyecto representa mi logro académico final en la tecnicatura de programación, el cual realicé en colaboración con Jose Pasini y que me permitió obtener mi graduación.",
+			logo: ["https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png", "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/react.svg", "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/css/css.png", "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/html/html.png"],
+			linkText: "Visitar Proyecto",
+			githubLink: "https://github.com/marianom23/front-pagina-web",
 		},
 	],
 };
