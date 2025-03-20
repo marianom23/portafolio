@@ -51,7 +51,7 @@ const INFO = {
 			linkText: "Visitar Proyecto",
 			link: "https://github.com/marianom23/js-app-excel-bloques",
 			githubLink: "https://github.com/marianom23/js-app-excel-bloques",
-			iframeLink: "https://js-app-excel-bloques.vercel.app/"
+			iframeLink: "https://js-app-excel-bloques.vercel.app/pages/introAnalytics/actividad02A/act.html"
 		},
 
 		{
@@ -62,7 +62,7 @@ const INFO = {
 			linkText: "Visitar Proyecto",
 			link: "https://github.com",
 			githubLink: "https://github.com/marianom23/simulador-tablas-dinamicas",
-			iframeLink: "https://js-app-excel-bloques-b8j5.vercel.app/"
+			iframeLink: "https://js-app-excel-bloques-b8j5.vercel.app/pages/actividades-data/fundamentos-estadistica/combinacion-tablas/actividad02b/act.html"
 		},
 
 		{
@@ -73,7 +73,7 @@ const INFO = {
 			linkText: "Visitar Proyecto",
 			link: "https://github.com/marianom23/actividades-ia",
 			githubLink: "https://github.com/marianom23/actividades-ia",
-			iframeLink: "https://actividades-ia.vercel.app/"
+			iframeLink: "https://actividades-ia.vercel.app/gesture-detection-exercises/1"
 		},
 		{
 			title: "The Crew Port",
