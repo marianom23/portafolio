@@ -67,6 +67,7 @@ const Project = ({ logo, title, description, githubLink, iframeLink }) => {
               frameBorder="0"
               width="100%"
               height="100%"
+              allow="camera; microphone"
             />
           </div>
         </div>
