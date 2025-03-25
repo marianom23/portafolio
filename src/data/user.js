@@ -73,7 +73,7 @@ const INFO = {
 			linkText: "Visitar Proyecto",
 			link: "https://github.com/marianom23/actividades-ia",
 			githubLink: "https://github.com/marianom23/actividades-ia",
-			iframeLink: "https://actividades-ia.vercel.app/gesture-detection-exercises/1"
+			iframeLink: "https://actividades-ia.vercel.app"
 		},
 		{
 			title: "The Crew Port",
