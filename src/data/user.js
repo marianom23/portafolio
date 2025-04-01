@@ -40,7 +40,8 @@ const INFO = {
 			logo: ["https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png", "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/react.svg", "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/css/css.png", "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/html/html.png", "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png"],
 			linkText: "Visitar Proyecto",
 			githubLink: "https://github.com/marianom23/react-python-runner",
-			iframeLink: "https://react-python-runner.vercel.app/sandbox"
+			iframeLink: "https://react-python-runner.vercel.app/sandbox",
+			repositoryStatus: "private"
 		},
 
 		{
@@ -51,7 +52,8 @@ const INFO = {
 			linkText: "Visitar Proyecto",
 			link: "https://github.com/marianom23/js-app-excel-bloques",
 			githubLink: "https://github.com/marianom23/js-app-excel-bloques",
-			iframeLink: "https://js-app-excel-bloques.vercel.app/pages/introAnalytics/actividad02A/act.html"
+			iframeLink: "https://js-app-excel-bloques.vercel.app/pages/introAnalytics/actividad02A/act.html",
+			repositoryStatus: "private"
 		},
 
 		{
@@ -62,7 +64,8 @@ const INFO = {
 			linkText: "Visitar Proyecto",
 			link: "https://github.com",
 			githubLink: "https://github.com/marianom23/simulador-tablas-dinamicas",
-			iframeLink: "https://js-app-excel-bloques-b8j5.vercel.app/pages/actividades-data/fundamentos-estadistica/combinacion-tablas/actividad02b/act.html"
+			iframeLink: "https://js-app-excel-bloques-b8j5.vercel.app/pages/actividades-data/fundamentos-estadistica/combinacion-tablas/actividad02b/act.html",
+			repositoryStatus: "private"
 		},
 
 		{
@@ -73,7 +76,8 @@ const INFO = {
 			linkText: "Visitar Proyecto",
 			link: "https://github.com/marianom23/actividades-ia",
 			githubLink: "https://github.com/marianom23/actividades-ia",
-			iframeLink: "https://actividades-ia.vercel.app"
+			iframeLink: "https://actividades-ia.vercel.app",
+			repositoryStatus: "private"
 		},
 		{
 			title: "The Crew Port",
@@ -82,6 +86,7 @@ const INFO = {
 			logo: ["https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png"],
 			linkText: "Visitar Proyecto",
 			githubLink: "https://github.com/marianom23/LaTripulacion",
+			repositoryStatus: "public"
 		},
 		{
 			title: "El Buen Sabor",
@@ -90,6 +95,7 @@ const INFO = {
 			logo: ["https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png", "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/react.svg", "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/css/css.png", "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/html/html.png"],
 			linkText: "Visitar Proyecto",
 			githubLink: "https://github.com/marianom23/front-pagina-web",
+			repositoryStatus: "public"
 		},
 	],
 };

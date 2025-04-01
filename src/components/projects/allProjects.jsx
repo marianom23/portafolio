@@ -18,6 +18,7 @@ const AllProjects = () => {
 						linkText={project.linkText}
 						githubLink={project.githubLink}
 						iframeLink={project.iframeLink}
+						repositoryStatus={project.repositoryStatus}
 					/>
 				</div>
 			))}

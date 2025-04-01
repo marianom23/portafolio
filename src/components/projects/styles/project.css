@@ -22,7 +22,6 @@
   height: 90%;
 }
 
-
 /* Logos en línea */
 .project-logo {
   display: flex;
@@ -53,7 +52,7 @@
 .project-actions {
   display: flex;
   gap: 10px;
-  margin-top: auto; /* Esto empuja la sección hacia el final del contenedor */
+  margin-top: auto; /* Empuja la sección de acciones hacia el final del contenedor */
 }
 
 /* Estilo compartido: tanto para <button> como para <a> */
@@ -82,17 +81,18 @@
   border-color: var(--link-color);
 }
 
-/* El botón nativo (para el modal) no necesita cambios adicionales */
-.action-button {
-  /* Podrías personalizar algo más aquí, si quisieras */
-}
-
-/* El enlace que luce como botón */
-.action-link {
-  /* Si quisieras personalizar algo más para el enlace, aquí */
-}
-
 /* Modal */
+
+/* Animación para que el overlay aparezca con un fundido */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -104,36 +104,72 @@
   justify-content: center;
   align-items: center;
   z-index: 1000;
+  animation: fadeIn 0.3s ease forwards; /* Fundido */
 }
 
+/* Animación para que el modal aparezca con un ligero escalado */
+@keyframes scaleIn {
+  0% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Contenedor grande para el iframe */
 .modal-content {
   position: relative;
-  width: 85vw;   /* 85% del ancho de la pantalla */
-  height: 85vh;  /* 85% de la altura de la pantalla */
+  width: 85vw;              /* 85% del ancho de la pantalla */
+  height: 85vh;             /* 85% de la altura de la pantalla */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   overflow: hidden;
-  border: none;         /* Quita cualquier borde */
-  background: transparent; /* Sin fondo para que solo se vea el iframe */
+  background: #fff;
+  animation: scaleIn 0.3s ease forwards; /* Escalado */
 }
 
 .modal-content iframe {
   width: 100%;
   height: 100%;
-  border: none;  /* Elimina bordes del iframe */
+  border: none;
 }
 
-/* Botón de cierre posicionado por fuera */
+/* Contenedor más pequeño para el mensaje de repositorio privado */
+.small-modal-content {
+  position: relative;
+  width: 400px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background: #fff;
+  animation: scaleIn 0.3s ease forwards; /* Escalado */
+  text-align: center;
+}
+
+/* Botón de cierre situado en el overlay, fuera del contenido */
 .close-button {
   position: absolute;
-  top: -20px;   /* Posicionado hacia arriba fuera del modal */
-  right: -20px; /* Posicionado hacia la derecha fuera del modal */
-  background: transparent;
+  top: 20px;
+  right: 20px;
+  background: #fff;
   border: none;
-  font-size: 1.5rem;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  width: 32px;
+  height: 32px;
+  line-height: 30px;
+  text-align: center;
   cursor: pointer;
   z-index: 1100;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-
+.close-button:hover {
+  background-color: #f2f2f2;
+  transform: scale(1.1);
+}
 
 /* Adaptación móvil */
 @media (max-width: 600px) {
@@ -149,5 +185,14 @@
   .action-button,
   .action-link {
     width: 100%;
+  }
+
+  .modal-content {
+    width: 90vw;  /* Más espacio en pantallas pequeñas */
+    height: 80vh;
+  }
+
+  .small-modal-content {
+    width: 85vw; /* Un poco más pequeño pero sigue siendo responsive */
   }
 }

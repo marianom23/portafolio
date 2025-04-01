@@ -4,13 +4,27 @@ import { faLink } from "@fortawesome/free-solid-svg-icons";
 
 import "./styles/project.css";
 
-const Project = ({ logo, title, description, githubLink, iframeLink }) => {
+const Project = ({
+  logo,
+  title,
+  description,
+  githubLink,
+  iframeLink,
+  repositoryStatus
+}) => {
   const [isModalOpen, setModalOpen] = useState(false);
+  const [isPrivateRepoModalOpen, setPrivateRepoModalOpen] = useState(false);
 
   const openModal = () => setModalOpen(true);
   const closeModal = (e) => {
     e.stopPropagation();
     setModalOpen(false);
+  };
+
+  const openPrivateRepoModal = () => setPrivateRepoModalOpen(true);
+  const closePrivateRepoModal = (e) => {
+    e.stopPropagation();
+    setPrivateRepoModalOpen(false);
   };
 
   return (
@@ -30,7 +44,7 @@ const Project = ({ logo, title, description, githubLink, iframeLink }) => {
 
           {/* Botones de acción */}
           <div className="project-actions">
-            {/* Botón para abrir el modal, se muestra solo si iframeLink no está vacío */}
+            {/* Botón para abrir el modal con el iframe, se muestra solo si iframeLink no está vacío */}
             {iframeLink && (
               <button className="action-button" onClick={openModal}>
                 <FontAwesomeIcon icon={faLink} />
@@ -38,8 +52,11 @@ const Project = ({ logo, title, description, githubLink, iframeLink }) => {
               </button>
             )}
 
-            {/* Enlace al repositorio de GitHub, se muestra solo si githubLink no está vacío */}
-            {githubLink && (
+            {/* 
+              - Si el repositorio es público (o no es 'private'), muestra enlace a GitHub.
+              - Si el repositorio es privado, muestra botón que abre el modal de confidencialidad.
+            */}
+            {repositoryStatus !== "private" && githubLink && (
               <a
                 className="action-link"
                 href={githubLink}
@@ -50,17 +67,28 @@ const Project = ({ logo, title, description, githubLink, iframeLink }) => {
                 <span>Ver repositorio</span>
               </a>
             )}
+            {repositoryStatus === "private" && (
+              <button className="action-button" onClick={openPrivateRepoModal}>
+                <FontAwesomeIcon icon={faLink} />
+                <span>Ver repositorio</span>
+              </button>
+            )}
           </div>
         </div>
       </div>
 
-      {/* Modal */}
+      {/* Modal para mostrar el iframe */}
       {isModalOpen && (
         <div className="modal-overlay" onClick={closeModal}>
-          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-            <button className="close-button" onClick={closeModal}>
-              &times;
-            </button>
+          {/* Botón de cierre fuera del contenido del iframe */}
+          <button className="close-button" onClick={closeModal}>
+            &times;
+          </button>
+
+          <div
+            className="modal-content"
+            onClick={(e) => e.stopPropagation()}
+          >
             <iframe
               src={iframeLink}
               title={`${title} Preview`}
@@ -69,6 +97,27 @@ const Project = ({ logo, title, description, githubLink, iframeLink }) => {
               height="100%"
               allow="camera; microphone"
             />
+          </div>
+        </div>
+      )}
+
+      {/* Modal para indicar repositorio privado (más pequeño) */}
+      {isPrivateRepoModalOpen && (
+        <div className="modal-overlay" onClick={closePrivateRepoModal}>
+          {/* Botón de cierre también fuera del contenido */}
+          <button className="close-button" onClick={closePrivateRepoModal}>
+            &times;
+          </button>
+
+          <div
+            className="small-modal-content"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <h2>Repositorio privado</h2>
+            <p>
+              Por cuestiones de confidencialidad con la empresa Digital House,
+              no se puede mostrar este repositorio.
+            </p>
           </div>
         </div>
       )}
